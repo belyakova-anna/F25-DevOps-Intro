@@ -179,10 +179,15 @@ Deploying directly to IPFS normally requires:
 4EVERLAND automates all of this:
 
 ✔ integrates with GitHub for CI/CD
+
 ✔ automatically builds and publishes content to IPFS
+
 ✔ provides stable domain routing (`*.4everland.app`)
+
 ✔ handles pinning and persistence
+
 ✔ regenerates CID on each deployment
+
 ✔ abstracts away the IPFS API and gateway interactions
 
 This makes decentralized hosting accessible even to beginners and removes operational overhead.
@@ -201,5 +206,7 @@ This makes decentralized hosting accessible even to beginners and removes operat
 | Performance | Depends on server location           | Can fetch from closest peer       |
 
 **IPFS trade-offs:**
+
 ✔ strong integrity, decentralization, resilience
+
 ✘ slower propagation, versioning complexity, gateway inconsistencies
