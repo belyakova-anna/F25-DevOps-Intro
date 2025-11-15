@@ -157,25 +157,25 @@ https://github.com/user-attachments/assets/e8a66c07-8710-411f-a91c-575cc790f927
 
 Using Docker Buildx, I built an OCI image for the WASI platform:
 
-https://github.com/user-attachments/assets/14b3c52a-5416-4583-b870-7402e3893fca
+![oci image](https://github.com/user-attachments/assets/14b3c52a-5416-4583-b870-7402e3893fca)
 
 Then I imported this OCI archive into containerd:
 
-https://github.com/user-attachments/assets/83f11545-25cb-4be3-b2bc-eba257cc1355
+![oci archive](https://github.com/user-attachments/assets/83f11545-25cb-4be3-b2bc-eba257cc1355)
 
 I confirmed that the image was successfully registered in containerd using `ctr images ls`:
 
-https://github.com/user-attachments/assets/597abe4b-e888-4834-aaa7-a33817f5d968
+![image](https://github.com/user-attachments/assets/597abe4b-e888-4834-aaa7-a33817f5d968)
 
 **WASI image size (ctr images ls):** 819.9 KiB
 
 ### 4. Run the WASM Container (CLI Mode)
 
-https://github.com/user-attachments/assets/17000574-5f97-4291-adaf-084b4158565a
+![cli mode](https://github.com/user-attachments/assets/17000574-5f97-4291-adaf-084b4158565a)
 
 ### 5. Startup Time Benchmark
 
-https://github.com/user-attachments/assets/4693f32b-24fb-4894-8635-105f585f6016
+![time](https://github.com/user-attachments/assets/4693f32b-24fb-4894-8635-105f585f6016)
 
 **Average startup time (5 runs):** 0.342 seconds
 
@@ -206,9 +206,9 @@ The WASM version of the application was compiled from the **exact same `main.go`
 
 I executed the WASM image using the **containerd CLI (`ctr`)**, as required, including:
 
-* `ctr images import` to load the OCI image
-* `ctr images ls` to verify it
-* `ctr run --rm --runtime io.containerd.wasmtime.v1 --platform wasi/wasm ...` to execute the WASM module in MODE=once
+- `ctr images import` to load the OCI image
+- `ctr images ls` to verify it
+- `ctr run --rm --runtime io.containerd.wasmtime.v1 --platform wasi/wasm ...` to execute the WASM module in MODE=once
 
 ## Task 4 — Performance Comparison & Analysis
 
