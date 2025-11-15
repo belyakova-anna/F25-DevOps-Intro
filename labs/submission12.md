@@ -143,13 +143,13 @@ Because the mode is selected purely via environment variables, the **same exact 
 
 ### 1. TinyGo version
 
-https://github.com/user-attachments/assets/10a1909e-fbc9-475f-bc80-aa55d197bdf6
+![tiny go](https://github.com/user-attachments/assets/10a1909e-fbc9-475f-bc80-aa55d197bdf6)
 
 **TinyGo version used:** tinygo version 0.39.0 linux/amd64
 
 ### 2. Build WASM Binary Using TinyGo
 
-https://github.com/user-attachments/assets/e8a66c07-8710-411f-a91c-575cc790f927
+![wasm binary](https://github.com/user-attachments/assets/e8a66c07-8710-411f-a91c-575cc790f927)
 
 **WASM binary size (main.wasm):** 2.4 MB
 
